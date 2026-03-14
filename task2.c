@@ -457,9 +457,6 @@ int main(int argc, char *argv[]) {
         if (argc > 3) {
             server_port = atoi(argv[3]);
         }
-        if (argc > 4) {
-            mode = atoi(argv[4]);
-        }
         run_server();
     } else if (argc > 1 && strcmp(argv[1], "client") == 0) {
         if (argc > 2) {
@@ -476,9 +473,6 @@ int main(int argc, char *argv[]) {
         }
         if (argc > 6) {
             window_size = atoi(argv[6]);
-        }
-        if (argc > 7) {
-            mode = atoi(argv[7]);
         }
         run_client();
     } else {
